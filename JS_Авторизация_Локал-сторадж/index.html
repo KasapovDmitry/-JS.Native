@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dima</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="screen screen-1">
+                <div class="for-start"></div>
+                <div class="auto-body">
+                    <div class="auto-title">Чтобы войти, пожалуйста авторизуйтесь</div>
+                    <div class="info-text"></div>
+                    <div class="input-block">
+                        <p class="inp-leabl">Логин</p>
+                        <input class="input-style log1" type="text" placeholder="Логин">
+                        <p class="inp-leabl">Пароль</p>
+                        <input class="input-style pass1" type="text" placeholder="Пароль">
+                    </div>
+                    <button class="main-btn btn1">Войти</button>
+                    <div class="for-registr">
+                        <div class="for-registr-text">Вы не сможите войти, если не авторизованы</div>
+                        <div class="for-registr-link">Авторизоваться</div>
+                    </div>
+                    <div class="info-text"></div>
+                </div>
+            </div>
+
+            <div class="screen screen-2 hidden">
+                <div class="auto-body">
+                    <div class="auto-title">ОБЯЗАТЕЛЬНО! Заполните все поля!</div>
+                    <div class="input-block">
+                        <p class="inp-leabl">Введите имя</p>
+                        <input class="name input-style" type="text" placeholder="Имя">
+                        <p class="inp-leabl">Введите логин</p>
+                        <input class="login input-style" type="text" placeholder="Логин">
+                        <p class="inp-leabl">Введите пароль</p>
+                        <input class="password input-style" type="text" placeholder="Пароль">
+                    </div>              
+                <button class="btn main-btn">Зарегистрироваться</button>
+                </div>
+               
+            </div>
+
+
+
+            <div class="screen screen-3 hidden">
+                <div class="auto-body auto-title">
+                    <p>Приветствую, <span class="user-name"></span> !</p> 
+                    <p>Вы успешно авторизовались 👍</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+<script src="./js/main.js"></script>
