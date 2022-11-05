@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аккордион крестиком</title>
+    <style>
+      .faq-acc {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+.faq-acc__item {
+    max-width: 670px;
+    position: relative;
+    overflow: hidden;
+}
+.faq-acc__item::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #CED2FB;
+}
+.faq-acc__item:first-child:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #CED2FB;
+}
+
+.faq-acc__title {
+    margin: 0;
+    width: 635px;
+    position: relative;
+    display: block;
+    padding: 20px 0px;
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+}
+.faq-acc__panel {
+    display: none;
+    margin: 0;
+    width: 570px;
+    padding: 13px 0px 20px 0px;
+    line-height: 20px;
+}
+.faq-acc__title:before,
+.faq-acc__title:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 16px;
+    height:  2px;
+    background: #7D89FF;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+.faq-acc__title:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(0deg);
+}
+.faq-acc__title:after {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(-90deg);
+}
+.faq-acc__title.active::after {
+    top: 50%;
+    transform: rotate(-45deg);
+    transition: all 0.2s ease-in-out;
+}
+.faq-acc__title.active::before {
+    top: 50%;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in-out;
+}  
+    </style>
+    <body>
+        <div class="container">
+            <div class="faq-acc">
+				<div class="faq-acc__item">
+					<h3 class="faq-acc__title">Что из себя представляет служба безопасности «Доминион»?</h3>
+                    <div>
+                        <p class="faq-acc__panel">
+                        Служба безопасности «Доминион» - это надежный и ответственный партнер, способный обеспечить полную безопасность физических и юридических лиц. Мы собрали специалистов с большим опытом работы в различных сферах, чтобы обеспечить комплексный подход к решению любой задачи.
+                        </p>
+                    </div>
+    			</div>
+                
+					<div class="faq-acc__item">
+						<h3 class="faq-acc__title">Что из себя представляет служба безопасности «Доминион»?</h3>
+						<div>
+							<p class="faq-acc__panel">
+								Служба безопасности «Доминион» - это надежный и ответственный партнер, способный обеспечить полную безопасность физических и юридических лиц. Мы собрали специалистов с большим опытом работы в различных сферах, чтобы обеспечить комплексный подход к решению любой задачи.
+							</p>
+						</div>
+					</div>
+					<div class="faq-acc__item">
+						<h3 class="faq-acc__title">Что из себя представляет служба безопасности «Доминион»?</h3>
+						<div>
+							<p class="faq-acc__panel">
+								Служба безопасности «Доминион» - это надежный и ответственный партнер, способный обеспечить полную безопасность физических и юридических лиц. Мы собрали специалистов с большим опытом работы в различных сферах, чтобы обеспечить комплексный подход к решению любой задачи.
+							</p>
+						</div>
+					</div>
+					<div class="faq-acc__item">
+						<h3 class="faq-acc__title">Что из себя представляет служба безопасности «Доминион»?</h3>
+						<div>
+							<p class="faq-acc__panel">
+								Служба безопасности «Доминион» - это надежный и ответственный партнер, способный обеспечить полную безопасность физических и юридических лиц. Мы собрали специалистов с большим опытом работы в различных сферах, чтобы обеспечить комплексный подход к решению любой задачи.
+							</p>
+						</div>
+					</div>
+					<div class="faq-acc__item">
+						<h3 class="faq-acc__title">Что из себя представляет служба безопасности «Доминион»?</h3>
+						<div>
+							<p class="faq-acc__panel">
+								Служба безопасности «Доминион» - это надежный и ответственный партнер, способный обеспечить полную безопасность физических и юридических лиц. Мы собрали специалистов с большим опытом работы в различных сферах, чтобы обеспечить комплексный подход к решению любой задачи.
+							</p>
+						</div>
+					</div>
+					<div class="faq-acc__item">
+						<h3 class="faq-acc__title">Что из себя представляет служба безопасности «Доминион»?</h3>
+						<div>
+							<p class="faq-acc__panel">
+								Служба безопасности «Доминион» - это надежный и ответственный партнер, способный обеспечить полную безопасность физических и юридических лиц. Мы собрали специалистов с большим опытом работы в различных сферах, чтобы обеспечить комплексный подход к решению любой задачи.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>	
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            //---- faq settings ----//
+            jQuery(document).ready(function ($) {
+                $(".faq-acc__title").click(function (j) {
+                    var dropDown = $(this).closest(".faq-acc__item").find(".faq-acc__panel");
+                    $(this).closest(".faq-acc").find(".faq-acc__panel").not(dropDown).slideUp();
+
+                    if ($(this).hasClass("active")) {
+                        $(this).removeClass("active");
+                    } else {
+                        $(this).closest(".faq-acc").find(".faq-acc__title.active").removeClass("active");
+                        $(this).addClass("active");
+                    }
+
+                    dropDown.stop(false, true).slideToggle();
+                    j.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>
