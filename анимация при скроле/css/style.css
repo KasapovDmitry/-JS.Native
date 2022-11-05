@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 20px;
+    color: #000000;
+}
+h1 {
+    display: block;
+    font-size: 0em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.hiro {
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(255, 208, 134) ;
+    background-image: url("../img/titul.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hiro-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hiro-title {
+    padding-top: 600px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 2em;
+    color: #fff;
+    /*======================== АНИМАЦИЯ ЗАГОЛОВКА ====================*/
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s; /*плавный переход*/
+}
+/*====================== КЛАСС ДЛЯ АКТИВАЦИИ АНИМАЦИИ ===================*/
+.hiro-title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+.hiro-text {
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 2em;
+    color: #fff;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s; /*плавный переход*/
+}
+.hiro-text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.6s;/*---задержка появления второго объекта */
+}
+/*============= УНИВЕРСАЛЬНЫЙ КЛАСС ==================*/
+._anim-show {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.2s;
+}
+._anim-show._active,
+._active ._anim-show {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.text-blok {
+    overflow: hidden;
+    min-height: 100%;
+    padding: 60px 0px;
+}
+.text-blok_title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+}
+.text-blok-body {
+    overflow: hidden;
+}
+.text-blok-body p {
+    padding-top: 80px;
+}
+.image {
+    padding: 60px 0px;
+    
+}
+.image-body {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.image-sell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.img-gg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    transform: scale(0); /*АНИМАЦИЯ КАРТИНКИ*/
+    transition: all 0.8s ease 0.2s;
+}
+.image-sell._active .img-gg {
+    transform: scale(1);
+}
+.image-sell._active .img-text {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.6s;
+}
+.img-text {
+    padding-top: 30px;
+
+    transform: translate(0px, 50%);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.img-gg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.blok-steps {
+    padding: 60px 0px;
+}
+.blok-steps_list {
+    padding-top: 40px;
+}
+.blok-steps_list li {
+    padding-top: 30px;
+
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.blok-steps_list._active li:nth-child(1){
+    transition: all 0.8s ease 0s;
+}
+.blok-steps_list._active li:nth-child(2){
+    transition: all 0.8s ease 0.2s;
+}
+.blok-steps_list._active li:nth-child(3){
+    transition: all 0.8s ease 0.4s;
+}
+.blok-steps_list._active li:nth-child(4){
+    transition: all 0.8s ease 0.6s;
+}
+.blok-steps_list._active li:nth-child(5){
+    transition: all 0.8s ease 0.8s;
+}
+.blok-steps_list._active li:nth-child(6){
+    transition: all 0.8s ease 1s;
+}
+.blok-steps_list._active li {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
