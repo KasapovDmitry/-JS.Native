@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Дмитрий Касапов</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./burger.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div  class="header-top">
+                <div class="header-icons">
+                <a href="https://krasnodar.hh.ru/resume/c4c0f142ff01cf33c50039ed1f524e5433744f" target="_blank">
+                    <img class="icon-hh" src="./img/header/hh.ru.png" alt="Перейти на HH.ru" title="hh.ru">
+                </a>
+                <a href="https://github.com/KasapovDmitry" target="_blank">
+                    <img class="icon-git" src="./img/header/github.svg" alt="Перейти на гитхаб" title="GitHab">
+                </a>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#hello" class="nav-link">Привет!</a>
+                    <a href="#skills" class="nav-link">Навыки</a>
+                    <a href="#portfolio" class="nav-link">Портфолио</a>
+                    <a href="#ability" class="nav-link">Качества</a>
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                </nav>
+                <div class="burger-menu">
+                    <div class="popup" onclick="myFunction()"><img src="./img/header/burger2.svg" alt="menu" class="button-burger">
+                        <span>              
+                            <ul class="menubox popuptext" id="myPopup">
+                                <li><a class="menu-item" href="#hello">Привет!</a></li>
+                                <li><a class="menu-item" href="#skills">Навыки</a></li>
+                                <li><a class="menu-item" href="#portfolio">Портфолио</a></li>
+                                <li><a class="menu-item" href="#ability">Качества</a></li>
+                                <li><a class="menu-item" href="#contacts">Контакты</a></li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        // Для бургера
+    function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    }
+    </script>
+   
+</body>
+</html>
